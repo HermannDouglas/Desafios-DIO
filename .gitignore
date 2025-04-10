@@ -1,0 +1,116 @@
+# Arquivo .gitignore para projetos Java
+
+# Arquivos compilados (bytecode)
+*.class
+
+# Arquivos de pacote (JARs, WARs, EARs)
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Diretórios de saída de build
+## Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+## Gradle
+build/
+.gradle/
+# O wrapper do Gradle geralmente é versionado, mas descomente se não quiser versioná-lo
+# gradle/wrapper/gradle-wrapper.jar
+# !gradle-wrapper.jar # Se você quiser manter o wrapper na raiz, mas ignorar em outros lugares
+
+## Ant (Exemplos - ajuste conforme necessário)
+# dist/
+# build/
+
+## Diretório de saída padrão do Eclipse
+bin/
+
+## Diretório de saída padrão do IntelliJ IDEA
+out/
+
+# Arquivos de configuração de IDEs
+## IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+shelf/ # IntelliJ Shelve Changes
+
+## Eclipse
+.classpath
+.project
+.settings/
+tmp/
+.metadata # Geralmente fora do projeto, mas pode aparecer
+
+## NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/ # Se usar Gradle com NetBeans
+
+## VS Code
+.vscode/
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos temporários
+*~
+*.swp
+*.swo
+*.tmp
+
+# Arquivos específicos do Sistema Operacional
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Arquivos de crash do JVM (hs_err_pid*)
+hs_err_pid*
+
+# Relatórios de teste e cobertura
+target/surefire-reports/
+target/failsafe-reports/
+**/jacoco.exec
+**/jacoco*.xml
+**/pit-reports/ # Relatórios de PIT (Mutation Testing)
+
+# Arquivos de dependências baixadas (geralmente fora do projeto, mas bom saber)
+# .m2/repository # Repositório local do Maven
+# .gradle/caches # Cache do Gradle
+
+# Arquivos de configuração local/sensíveis (NUNCA versionar segredos!)
+# Adicione aqui arquivos específicos do seu projeto que contenham senhas,
+# chaves de API, ou configurações específicas de ambiente de desenvolvimento.
+# Exemplos:
+# local.properties
+# application-secrets.properties
+# .env
+
+# Arquivos gerados por ferramentas específicas (exemplo)
+# .apt_generated/
+# target/generated-sources/
+
+# Arquivos de bancos de dados embarcados (exemplo H2)
+# *.mv.db
+# *.trace.db
+
