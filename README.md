@@ -1,4 +1,4 @@
-# Repositório de Projetos Java - Curso de Desenvolvimento Fullstack
+# Desafios em Java | DIO
 
 Este repositório faz parte do curso de desenvolvimento Fullstack da DIO e contém desafios que abordam diferentes aspectos da programação, como validação de endpoints de API, contagem de métodos HTTP e monitoramento de temperaturas de CPU.
 
