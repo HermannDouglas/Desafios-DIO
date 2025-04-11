@@ -9,8 +9,15 @@ public class HttpMethodCounter {
         String[] methods = input.split(",");
         Map<String, Integer> methodCounts = new HashMap<>();
 
-        // TODO: Contar a ocorrência de cada método HTTP e armazenar no mapa 'methodCounts'
-        
+        // Contar a ocorrência de cada método HTTP e armazenar no mapa 'methodCounts'
+        for (String method : methods) {
+            method = method.trim(); // Remover os espaços em branco
+            if (methodCounts.containsKey(method)) {
+                methodCounts.put(method, methodCounts.get(method) + 1);
+            } else {
+                methodCounts.put(method, 1);
+            }
+        }        
 
         // Encontrar o metodo com a maior contagem
         String mostFrequentMethod = "";
