@@ -13,10 +13,11 @@ public class Table {
     public void insert(int key, String value) {
         table.put(key, value);
     }
-    
-    // TODO: Método para deletar um elemento da tabela usando sua chave (ID)
 
-    
+    // Método para deletar um elemento da tabela usando sua chave (ID)
+    public void delete(int key) {
+        table.remove(key);
+    }
 
     public void display() {
         for (String name : table.values()) {
@@ -36,11 +37,10 @@ public class Table {
         table.insert(5, "Gabriela");
         table.insert(6, "Luiza");
 
-   
         int n = scanner.nextInt();
 
         for (int i = 0; i < n; i++) {
-   
+
             int id = scanner.nextInt();
             table.delete(id);
         }

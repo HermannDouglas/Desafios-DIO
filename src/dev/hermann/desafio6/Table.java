@@ -21,12 +21,18 @@ public class Table {
         table.put(key, value);
     }
 
-       // TODO: Implementar o método update:
-     // DICA: O método update deve verificar se a chave (key) existe na tabela.
-   // Se existir, atualize o valor associado a essa chave com newValue.
- // Caso contrário, exiba a mensagem "ID nao encontrado.".
-   
-
+    // Método update:
+    // DICA: O método update deve verificar se a chave (key) existe na tabela.
+    // Se existir, atualize o valor associado a essa chave com newValue.
+    // Caso contrário, exiba a mensagem "ID nao encontrado.".
+    // Método para atualizar um elemento da tabela
+    public void update(int key, String newValue) {
+        if (table.containsKey(key)) {
+            table.put(key, newValue);
+        } else {
+            System.out.println("ID nao encontrado.");
+        }
+    }
 
     public void display() {
         for (String name : table.values()) {
@@ -38,11 +44,11 @@ public class Table {
         Scanner scanner = new Scanner(System.in);
         Table table = new Table();
 
-        int n = Integer.parseInt(scanner.nextLine().trim()); 
+        int n = Integer.parseInt(scanner.nextLine().trim());
 
         for (int i = 0; i < n; i++) {
-            int id = Integer.parseInt(scanner.nextLine().trim()); 
-            String newName = scanner.nextLine().trim(); 
+            int id = Integer.parseInt(scanner.nextLine().trim());
+            String newName = scanner.nextLine().trim();
             table.update(id, newName);
         }
 
