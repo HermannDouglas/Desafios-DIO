@@ -1,3 +1,5 @@
+package dev.hermann.desafio6;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
