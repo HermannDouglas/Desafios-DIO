@@ -11,7 +11,7 @@ public class ConsultaFuncionarios {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
 
         Map<String, List<Funcionario>> departamentoFuncionarios = new HashMap<>();
 
@@ -23,16 +23,18 @@ public class ConsultaFuncionarios {
             scanner.nextLine(); // Consume the newline
 
             // TODO: Adicionar o funcionário ao departamento correspondente
-            // Use o método computeIfAbsent para obter a lista do departamento e adicionar o funcionário a essa lista.
-            // Dica: departamentoFuncionarios.computeIfAbsent(departamento, k -> new LinkedList<>()).add(new Funcionario(nome, salario));
-            
+            // Use o método computeIfAbsent para obter a lista do departamento e adicionar o // funcionário a essa lista.
+            // Dica: departamentoFuncionarios.computeIfAbsent(departamento, k -> new // LinkedList<>()).add(new Funcionario(nome, salario));
+            departamentoFuncionarios
+                    .computeIfAbsent(departamento, k -> new LinkedList<>())
+                    .add(new Funcionario(nome, salario));
 
         }
 
-       
         String departamentoConsulta = scanner.nextLine();
-        
-        List<Funcionario> funcionarios = departamentoFuncionarios.getOrDefault(departamentoConsulta, new LinkedList<>());
+
+        List<Funcionario> funcionarios = departamentoFuncionarios.getOrDefault(departamentoConsulta,
+                new LinkedList<>());
         for (Funcionario f : funcionarios) {
             System.out.printf("Nome: %s - Salario: %.2f\n", f.nome, f.salario);
         }

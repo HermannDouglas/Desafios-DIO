@@ -9,10 +9,9 @@ public class AtualizacaoSalarios {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
 
         List<Funcionario> funcionarios = new ArrayList<>();
-
 
         for (int i = 0; i < n; i++) {
             String nome = scanner.nextLine();
@@ -24,14 +23,15 @@ public class AtualizacaoSalarios {
 
         double aumento = scanner.nextDouble();
 
-
         for (int i = 0; i < funcionarios.size(); i++) {
-                // TODO: Complete o código para atualizar os salários dos funcionários
-              // 1. Obtenha o funcionário atual da lista.
+            // Código para atualizar os salários dos funcionários completo
+            // 1. Obtenha o funcionário atual da lista.
             // 2. Calcule o novo salário: novoSalario = salario * (1 + aumento / 100).
-          // 3. Imprima o nome e o novo salário do funcionário no formato: "Nome: X - Novo Salario: Y".
-         // 4. Certifique-se de que o novo salário seja impresso com duas casas decimais.
-
+            // 3. Imprima o nome e o novo salário do funcionário no formato: "Nome: X - Novo // Salario: Y".
+            // 4. Certifique-se de que o novo salário seja impresso com duas casas decimais.
+            Funcionario funcionario = funcionarios.get(i);
+            double novoSalario = funcionario.salario * (1 + aumento / 100);
+            System.out.printf("Nome: %s - Novo Salario: %.2f%n", funcionario.nome, novoSalario);
 
         }
 
