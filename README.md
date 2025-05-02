@@ -7,7 +7,6 @@ Este repositório faz parte do curso de desenvolvimento Fullstack da DIO e cont�
 ## 📂 Estrutura do Repositório
 
 ### 📁 Código-fonte
-
 O código está organizado no diretório `src`, com subpacotes para cada desafio:
 
 - **`desafio1`**: Validação de endpoints de API.
@@ -16,6 +15,9 @@ O código está organizado no diretório `src`, com subpacotes para cada desafio
 - **`desafio4`**: Inserção de Elementos.
 - **`desafio5`**: Deletando Elementos.
 - **`desafio6`**: Atualizando Elementos.
+- **`desafio7`**: Ordenação de Dados.
+- **`desafio8`**: Busca em Estruturas de Dados.
+- **`desafio9`**: Geração de Relatórios.
 
 ### 📄 Documentação
 
@@ -27,6 +29,9 @@ O diretório `docs` contém arquivos de documentação que explicam o funcioname
 - [Desafio 4 - Inserção de Elementos](docs/Desafio4.md)
 - [Desafio 5 - Deletando Elementos](docs/Desafio5.md)
 - [Desafio 6 - Atualizando Elementos](docs/Desafio6.md)
+- [Desafio 7 - Ordenação de Dados](docs/Desafio7.md)
+- [Desafio 8 - Busca em Estruturas de Dados](docs/Desafio8.md)
+- [Desafio 9 - Geração de Relatórios](docs/Desafio9.md)
 
 ### ⚙️ Configuração do Git
 
