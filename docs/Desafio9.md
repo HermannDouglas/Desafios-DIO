@@ -1,6 +1,6 @@
 # Desafio 9 - Atualização de Salários
 
-# Descrição
+## Descrição
 
 Você está desenvolvendo um sistema de recursos humanos para uma empresa. O sistema precisa consultar os funcionários de um determinado departamento. Cada funcionário tem um nome, departamento e salário. Crie um programa que leia os dados dos funcionários e retorne a lista de funcionários de um departamento específico.
 

@@ -1,6 +1,6 @@
 # Desafio 1 - Validando Endpoints de API
 
-### Descrição
+## Descrição
 
 Você está desenvolvendo um programa para validar endpoints de API. O algoritmo deve verificar se o endpoint fornecido segue o formato padrão `/api/{recurso}` e seus sub-recursos. O formato válido é iniciado por `/api/` seguido por um ou mais segmentos separados por barras (`/`), onde cada segmento é uma palavra alfanumérica.
 
