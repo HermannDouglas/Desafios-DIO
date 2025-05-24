@@ -2,19 +2,18 @@ package dev.hermann.desafio12;
 
 import java.util.*;
 
-
 public class RemoverDuplicados {
     public static List<String> removerDuplicados(List<String> produtos) {
         Set<String> vistos = new HashSet<>();
-        
+
         List<String> resultado = new ArrayList<>();
-        
+
         for (String produto : produtos) {
-            
+
             String produtoLower = produto.toLowerCase();
-         
+
             if (!vistos.contains(produtoLower)) {
-                
+
                 resultado.add(produto);
                 vistos.add(produtoLower);
             }
@@ -25,22 +24,24 @@ public class RemoverDuplicados {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        scanner.nextLine();  
-        
+        scanner.nextLine();
+
         List<String> produtos = new ArrayList<>();
-        
 
         for (int i = 0; i < n; i++) {
             String produto = scanner.nextLine();
             produtos.add(produto);
         }
-        
-        // TODO: Chamar a função removerDuplicados e armazenar o resultado:
-        
+
+        // Chamar a função removerDuplicados e armazenar o resultado:
+        List<String> produtosUnicos = removerDuplicados(produtos);
 
         System.out.println("Produtos unicos:");
-      // TODO: Implemente o loop for para imprimir cada produto na lista produtosUnicos:
-       
+        // loop for para imprimir cada produto na lista
+        // produtosUnicos:
+        for (String produto : produtosUnicos) {
+            System.out.println(produto);
+        }
 
         scanner.close();
     }
