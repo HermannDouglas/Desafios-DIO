@@ -18,6 +18,9 @@ O código está organizado no diretório `src`, com subpacotes para cada desafio
 - **`desafio7`**: Ordenação de Dados.
 - **`desafio8`**: Busca em Estruturas de Dados.
 - **`desafio9`**: Geração de Relatórios.
+- **`desafio10`**: Consulta de Produtos em Estoque.
+- **`desafio11`**: Filtro de Produtos por Faixa de Preço.
+- **`desafio12`**: Remoção de Duplicatas de Produtos de TI.
 
 ### 📄 Documentação
 
@@ -32,6 +35,9 @@ O diretório `docs` contém arquivos de documentação que explicam o funcioname
 - [Desafio 7 - Ordenação de Dados](docs/Desafio7.md)
 - [Desafio 8 - Busca em Estruturas de Dados](docs/Desafio8.md)
 - [Desafio 9 - Geração de Relatórios](docs/Desafio9.md)
+- [Desafio 10 - Consulta de Produtos em Estoque](docs/Desafio10.md)
+- [Desafio 11 - Filtro de Produtos por Faixa de Preço](docs/Desafio11.md)
+- [Desafio 12 - Remoção de Duplicatas de Produtos de TI](docs/Desafio12.md)
 
 ### ⚙️ Configuração do Git
 
