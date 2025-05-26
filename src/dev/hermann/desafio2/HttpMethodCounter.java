@@ -17,7 +17,7 @@ public class HttpMethodCounter {
             } else {
                 methodCounts.put(method, 1);
             }
-        }        
+        }
 
         // Encontrar o metodo com a maior contagem
         String mostFrequentMethod = "";
@@ -52,9 +52,10 @@ public class HttpMethodCounter {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        String output = findMostFrequentMethod(input);
-        System.out.println(output);
+        try (Scanner scanner = new Scanner(System.in)) {
+            String input = scanner.nextLine();
+            String output = findMostFrequentMethod(input);
+            System.out.println(output);
+        }
     }
 }

@@ -14,8 +14,9 @@ public class EndpointValidator {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String endpoint = scanner.nextLine();
-        System.out.println(validateEndpoint(endpoint));
+        try (Scanner scanner = new Scanner(System.in)) {
+            String endpoint = scanner.nextLine();
+            System.out.println(validateEndpoint(endpoint));
+        }
     }
 }

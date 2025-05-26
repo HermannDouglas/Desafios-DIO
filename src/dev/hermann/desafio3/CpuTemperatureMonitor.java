@@ -9,7 +9,8 @@ public class CpuTemperatureMonitor {
 
         for (String reading : readings) {
             int temperature = Integer.parseInt(reading.trim());
-            // Comparar a temperatura convertida com maxTemperature e atualizar maxTemperature se a leitura atual for maior.
+            // Comparar a temperatura convertida com maxTemperature e atualizar
+            // maxTemperature se a leitura atual for maior.
             if (temperature > maxTemperature) {
                 maxTemperature = temperature;
             }
@@ -21,9 +22,10 @@ public class CpuTemperatureMonitor {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        String output = findHighestTemperature(input);
-        System.out.println(output);
+        try (Scanner scanner = new Scanner(System.in)) {
+            String input = scanner.nextLine();
+            String output = findHighestTemperature(input);
+            System.out.println(output);
+        }
     }
 }
